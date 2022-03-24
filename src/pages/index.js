@@ -9,6 +9,7 @@ import text4 from "../images/reece.gif";
 import text5 from "../images/years.gif";
 import text6 from "../images/and-join.gif";
 import diner from "../images/american-diner-model.webp";
+import song from "../images/song.mp3";
 
 import "../reset.css";
 import splashImage from "../images/splash.jpeg";
@@ -88,7 +89,7 @@ const text = {
 const IndexPage = () => {
   const [displayEnvelope, setDisplayEnvelope] = useState(true);
   const [audio, setAudio] = useState(
-    typeof Audio !== "undefined" && new Audio("/song.mp3")
+    typeof Audio !== "undefined" && new Audio(song)
   );
 
   const start = () => {
