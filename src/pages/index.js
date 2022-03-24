@@ -14,13 +14,14 @@ import "../reset.css";
 import splashImage from "../images/splash.jpeg";
 
 const pageStyles = {
-  color: "#232129",
+  color: "white",
   padding: "0",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   margin: "0",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  fontSize: "9vw",
 };
 
 const flagStyle = {
@@ -73,6 +74,16 @@ const button = {
   right: "0",
 };
 
+const text = {
+  minHeight: "100vh",
+  textAlign: "center",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  mixBlendMode: "difference",
+};
+
 // markup
 const IndexPage = () => {
   const [displayEnvelope, setDisplayEnvelope] = useState(true);
@@ -103,6 +114,11 @@ const IndexPage = () => {
       <img style={gif} src={text6} />
       <img style={gif} src={header} />
       <img style={dinerStyle} src={diner} />
+      <div style={text}>
+        <p>24 March 2022</p>
+        <p>Come around like 7?</p>
+        <p>Text for address</p>
+      </div>
       <button onClick={() => stop()} style={button}>
         shhhhhh
       </button>
