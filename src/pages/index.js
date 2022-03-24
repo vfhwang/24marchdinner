@@ -87,7 +87,9 @@ const text = {
 // markup
 const IndexPage = () => {
   const [displayEnvelope, setDisplayEnvelope] = useState(true);
-  const [audio, setAudio] = useState(new Audio("/song.mp3"));
+  const [audio, setAudio] = useState(
+    typeof Audio !== "undefined" && new Audio("/song.mp3")
+  );
 
   const start = () => {
     audio.play();
